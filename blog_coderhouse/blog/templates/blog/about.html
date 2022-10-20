@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/about-bg.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p> Mi nombre es Johana Toriggino, soy de Victoria, Entre Rios, Argentina y tengo 32 años. Soy Contadora Publica y me dedico a la Prevención de Lavado de Activos y Financiamiento del Terrorismo.</p>
+                <p> Esta web fue creada para el curso de Python de <a href="https://www.coderhouse.com/">Coderhouse.</a>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}
